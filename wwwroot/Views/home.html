@@ -1,5 +1,5 @@
-<div class="col-md-4"></div>
-<div class="container col-md-4">
+<div class="col-md-3"></div>
+<div class="container col-md-6">
   <img src="http://www.gadome.com/img/new_marta_rail_map.jpg"/>
   <div class="container" style="width: 50%; ">
   <style>
@@ -11,22 +11,31 @@
     width: 100%;
   }
   </style>
-  <div class="dropdown" style="margin-bottom: 50px;">
-    <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">From
-      <span class="caret"></span></button>
-      <ul class="dropdown-menu">
-        <li><a href="#/">test</a></li>
-        <li><a href="#/">test</a></li>
-      </ul>
-    </div>
-    <div class="dropdown">
-      <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">To
-        <span class="caret"></span></button>
-        <ul class="dropdown-menu">
-          <li><a href="#"></a></li>
-          <li><a href="#"></a></li>
-        </ul>
-      </div>
-    </div>
+  <div style="margin-bottom: 200px;">
+    <form ng-submit="submit()">
+      <h4>Starting Point:</h4> <input style="margin-bottom: 15px;" class="form-control" ng-model="origin"/>
+      <h4>Destination Point:</h4> <input class="form-control" ng-model="dest"/>
+      <input style="margin-top: 15px;" type="submit" class="btn btn-primary" value="Calculate!"></button>
+    </form>
+    <h3>{{emissions}}</h3></br>
+    <h3>{{fuel}}</h3>
   </div>
-  <div class="col-md-4">{{directions}}</div>
+  <!-- <div class="dropdown" style="margin-bottom: 100px;">
+  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">From
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu">
+  <li><a href="#/">{{origin}}</a></li>
+  <li><a href="#/">{{dest}}</a></li>
+</ul>
+</div>
+<div class="dropdown" style="margin-bottom: 200px;">
+<button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">To
+<span class="caret"></span></button>
+<ul class="dropdown-menu">
+<li><a href="#/">{{origin}}</a></li>
+<li><a href="#/">{{dest}}</a></li>
+</ul>
+</div>
+</div> -->
+</div>
+<div class="col-md-3"></div>
